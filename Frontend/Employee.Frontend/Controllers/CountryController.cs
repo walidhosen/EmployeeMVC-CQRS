@@ -47,7 +47,7 @@ public class CountryController : Controller
         }
         else
         {
-            var data = await _httpClient.GetAsync($"Country/Id:int?Id={Id}");
+            var data = await _httpClient.GetAsync($"Country/{Id}");
             if (data.IsSuccessStatusCode)
             {
                 var result =await data.Content.ReadFromJsonAsync<Countrys>();

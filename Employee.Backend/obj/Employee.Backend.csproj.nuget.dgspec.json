@@ -165,6 +165,14 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "OpenXmlPowerTools": {
+              "target": "Package",
+              "version": "[4.5.3.2, )"
+            },
+            "SolrNet.Core": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [

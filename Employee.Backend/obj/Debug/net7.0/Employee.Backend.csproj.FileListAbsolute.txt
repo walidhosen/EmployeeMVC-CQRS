@@ -540,3 +540,8 @@ E:\Walid\Employee\Employee.Backend\obj\Debug\net7.0\Employee.Backend.genruntimec
 E:\Walid\Employee\Employee.Backend\obj\Debug\net7.0\ref\Employee.Backend.dll
 E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.Newtonsoft.dll
 E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.ReDoc.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\OpenXmlPowerTools.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\SolrNet.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\System.IO.Packaging.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\System.Management.Automation.dll

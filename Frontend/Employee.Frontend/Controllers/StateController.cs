@@ -47,5 +47,63 @@ namespace Employee.Frontend.Controllers;
         var data = await GetAllState();
         return View(data);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> AddOrEdit(int Id)
+    {
+        if (Id == 0)
+        {
+            return View(new State());
+        }
+        else
+        {
+            var data = await _httpClient.GetAsync($"State/{Id}");
+            if (data.IsSuccessStatusCode)
+            {
+                var result = await data.Content.ReadFromJsonAsync<State>();
+                return View(result);
+            }
+
+
+        }
+        return View(new State());
+    }
+
+    [HttpPost]
+    [AutoValidateAntiforgeryToken]
+    public async Task<IActionResult> AddOrEdit(int Id, State State)
+    {
+        if (ModelState.IsValid)
+        {
+            if (Id == 0)
+            {
+                var result = await _httpClient.PostAsJsonAsync("State", State);
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+            }
+            else
+            {
+                var result = await _httpClient.PutAsJsonAsync($"State/{Id}", State);
+                if (result.IsSuccessStatusCode) { return RedirectToAction("Index"); }
+            }
+
+
+        }
+        return View(new State());
+    }
+    [HttpGet]
+
+    public async Task<IActionResult> Delete(int Id)
+    {
+        var data = await _httpClient.DeleteAsync($"State/{Id}");
+        if (data.IsSuccessStatusCode)
+        {
+            return RedirectToAction("Index");
+        }
+        else return NotFound();
+    }
 }
+
 
