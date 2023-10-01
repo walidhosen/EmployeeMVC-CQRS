@@ -538,3 +538,5 @@ E:\Walid\Employee\Employee.Backend\obj\Debug\net7.0\refint\Employee.Backend.dll
 E:\Walid\Employee\Employee.Backend\obj\Debug\net7.0\Employee.Backend.pdb
 E:\Walid\Employee\Employee.Backend\obj\Debug\net7.0\Employee.Backend.genruntimeconfig.cache
 E:\Walid\Employee\Employee.Backend\obj\Debug\net7.0\ref\Employee.Backend.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.Newtonsoft.dll
+E:\Walid\Employee\Employee.Backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.ReDoc.dll
